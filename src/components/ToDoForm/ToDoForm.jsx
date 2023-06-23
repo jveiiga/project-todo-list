@@ -1,14 +1,17 @@
 import { useContext, useState } from "react"
 import { ToDoContext } from "../../contexts/ContextToDo"
+import { Button } from "../Button"
 
 const ToDoForm = () => {
 
     const [task, setTask] = useState("")
+
     const { saveToDo } = useContext(ToDoContext)
 
     const handleSaveNewTask = (event) => {
         event.preventDefault()
 
+        // setInputValue(event.target.value)
         saveToDo(task)
         setTask("")
     }
@@ -18,10 +21,10 @@ const ToDoForm = () => {
             <input 
                 type="text"
                 placeholder="Exemplo: Estudar"
-                task={task}
+                value={task}
                 onChange={(event) => setTask(event.target.value)}
             />
-            <button>Criar nova tarefa</button>
+            <Button>+</Button>
         </form>
     )
 }

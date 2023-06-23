@@ -4,7 +4,9 @@
 
 
 .App-header {
-  background-color: #282c34;
+  /* background-color: #282c34; */
+  background-image: linear-gradient(to left, #D2AA42, #e3e983 );
+  background-size: 100% 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -13,6 +15,7 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
 
 form {
   display: flex;

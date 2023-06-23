@@ -1,5 +1,6 @@
 import { useContext } from "react"
 import { ToDoContext } from "../../contexts/ContextToDo"
+import { Button } from "../Button"
 
 const ToDo = () => {
 
@@ -11,13 +12,14 @@ const ToDo = () => {
                 {
                     !todos.length ? (
 
-                        <p>lista vazia</p>
+                        <h3>Lista Vazia</h3>
 
                     ) : (
                         todos.map(todo => (
 
                         <li key={todo.id}>
-                            <input 
+                            <input
+                                className="checkbox"
                                 type="checkbox"
                                 onClick={() => completedTask(todo.id)}
                             />
@@ -27,7 +29,12 @@ const ToDo = () => {
                             >
                             { todo.task }
                             </span>
-                            <button onClick={() => deleteToDo(todo.id)}>Excluir</button>
+                            <Button 
+                                className="btn-delete"
+                                onClick={() => deleteToDo(todo.id)}
+                            >
+                                Excluir
+                            </Button>
                         </li>
                         ))
                     )

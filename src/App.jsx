@@ -5,9 +5,9 @@ import ToDoForm from './components/ToDoForm/ToDoForm';
 function App() {
   return (
     <div className="App App-header">
-      <h1>Lista de tarefas</h1>
-      <ToDo />
+      <h1>Lista de Tarefas</h1>
       <ToDoForm />
+      <ToDo />
     </div>
   );
 }

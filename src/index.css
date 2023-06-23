@@ -1,15 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif; */
+  font-family: 'Noto Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  /* font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace; */
+  font-family: 'Noto Sans', sans-serif;
+
 }
 
 * {
@@ -27,24 +32,58 @@ code {
 }
 
 form {
+  width: 60%;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+input {
+  padding-left: 15px;
+}
+
 form input {
-  width: 300px;
-  padding: 5px 0;
-  text-align: center;
-  border-radius: 8px;
-  margin-bottom: 20px;
-  border: 1px solid black;
-  font-size: 22px;
+  position: absolute;
+  width: 700px;
+  height: 50px;
+  padding: 5px 0 0 100px;
+  border: none;
+  font-size: 15px;
 }
+
+
 form button {
+  position: relative;
+  left: 317px;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
+  width: 5%;
+  height:80%;
   padding: 10px 20px;
   border-radius: 8px;
-  background: green;
-  border: 1px solid black;
+  background: #FF6F47;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+.btn-delete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 12%;
+  height:80%;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background: #FF6F47;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
 }
 
 div.todos-list {
@@ -52,6 +91,7 @@ div.todos-list {
   align-items: center;
   flex-direction: column;
 }
+
 div.todos-list button {
   padding: 5px;
   color: white;
@@ -59,30 +99,65 @@ div.todos-list button {
   background-color: red;
   border: 1px solid black;
 }
+
 div.todos-list input[type="checkbox"] {
   width: 24px;
   height: 24px;
 }
+
 div.todos-list ul {
   margin: 10px 0 50px;
   list-style-type: none;
 }
+
 div.todos-list li {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
 }
+
 div.todos-list li span {
   font-size: 32px;
   margin: 0 10px;
 }
 
+li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  width: 500px;
+}
+
 li span {
+  display: flex;
   font-size: 32px;
   margin: 0 10px;
+  width: 100%;
 }
 
 h1 { font-size: 42px; }
 
 p { font-size: 32px; }
+
+.checkbox {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: #ccc;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  padding: 2px;
+  cursor: pointer;
+}
+
+.checkbox:checked {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.checkbox:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
           
