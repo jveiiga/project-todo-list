@@ -22,7 +22,7 @@
 <img src="https://diegomariano.com/wp-content/uploads/2020/08/logo-2582747_640-e1597771254582.png" alt="css" width="60" height="60" max-width="100%">
 
 ## Funcionalidades da aplicação
-  - Contagem de números
+  - Adicionar afazeres a uma lista de tarefas podendo marcar como concluído!
 
 ## Instalação
 
